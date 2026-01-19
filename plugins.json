@@ -1,0 +1,249 @@
+{
+  "meta": {
+    "name": "Free VST Plugins for Mac",
+    "version": "1.0.0",
+    "description": "Curated collection of high-quality free VST/AU plugins for macOS",
+    "updated": "2026-01-18",
+    "author": "gr8monk3ys",
+    "license": "MIT"
+  },
+  "plugins": {
+    "synths": [
+      {
+        "name": "Surge XT",
+        "description": "Open-source hybrid synth - wavetable, FM, subtractive. 2800+ presets",
+        "url": "https://github.com/surge-synthesizer/releases-xt/releases/download/1.3.4/surge-xt-macOS-1.3.4.dmg",
+        "filename": "surge-xt-macOS-1.3.4.dmg",
+        "version": "1.3.4",
+        "formats": ["VST3", "AU", "CLAP"],
+        "website": "https://surge-synthesizer.github.io/",
+        "open_source": true,
+        "github": "https://github.com/surge-synthesizer/surge"
+      },
+      {
+        "name": "Dexed",
+        "description": "Yamaha DX7 FM synth clone - loads thousands of classic patches",
+        "url": "https://github.com/asb2m10/dexed/releases/download/v1.0.1/Dexed-1.0.1-macOS.dmg",
+        "filename": "Dexed-1.0.1-macOS.dmg",
+        "version": "1.0.1",
+        "formats": ["VST3", "AU"],
+        "website": "https://asb2m10.github.io/dexed/",
+        "open_source": true,
+        "github": "https://github.com/asb2m10/dexed"
+      },
+      {
+        "name": "OB-Xd",
+        "description": "Oberheim OB-X emulation - fat analog polysynth",
+        "url": "https://github.com/reales/OB-Xd/releases/download/v2.19/OB-Xd.2.19.pkg",
+        "filename": "OB-Xd.2.19.pkg",
+        "version": "2.19",
+        "formats": ["VST3", "AU", "VST"],
+        "website": "https://www.discodsp.com/obxd/",
+        "open_source": true,
+        "github": "https://github.com/reales/OB-Xd"
+      },
+      {
+        "name": "Helm",
+        "description": "Polyphonic synth with deep modulation routing",
+        "url": "https://tytel.org/static/dist/Helm_v0_9_0_r.pkg",
+        "filename": "Helm_v0_9_0_r.pkg",
+        "version": "0.9.0",
+        "formats": ["VST3", "AU", "VST"],
+        "website": "https://tytel.org/helm/",
+        "open_source": true,
+        "github": "https://github.com/mtytel/helm"
+      },
+      {
+        "name": "TAL-NoiseMaker",
+        "description": "Classic VA synth - 256 presets, low CPU usage",
+        "url": "https://tal-software.com/downloads/plugins/TAL-NoiseMaker-installer_macos.zip",
+        "filename": "TAL-NoiseMaker-installer_macos.zip",
+        "version": "5.0.6",
+        "formats": ["VST3", "AU", "VST", "AAX", "CLAP"],
+        "website": "https://tal-software.com/products/tal-noisemaker",
+        "open_source": false
+      },
+      {
+        "name": "Tyrell N6",
+        "description": "u-he analog synth - 580+ presets, Apple Silicon native",
+        "url": "https://dl.u-he.com/releases/TyrellN6_300_public_beta_16976_Mac.zip",
+        "filename": "TyrellN6_Mac.zip",
+        "version": "3.0.0",
+        "formats": ["VST3", "AU", "VST", "CLAP", "AAX"],
+        "website": "https://u-he.com/products/tyrelln6/",
+        "open_source": false
+      },
+      {
+        "name": "Zebralette",
+        "description": "u-he wavetable oscillator - deep sound design capabilities",
+        "url": "https://dl.u-he.com/releases/Zebra_Legacy_294_16765_Mac.zip",
+        "filename": "Zebralette_Mac.zip",
+        "version": "2.9.4",
+        "formats": ["VST3", "AU", "VST"],
+        "website": "https://u-he.com/products/zebralette/",
+        "open_source": false
+      }
+    ],
+    "effects": [
+      {
+        "name": "Valhalla Supermassive",
+        "description": "Lush reverbs & delays - 21 modes, studio quality",
+        "url": "https://valhallaproduction.s3.us-west-2.amazonaws.com/supermassive/ValhallaSupermassiveOSX_5_0_0.dmg",
+        "filename": "ValhallaSupermassiveOSX_5_0_0.dmg",
+        "version": "5.0.0",
+        "formats": ["VST3", "AU", "VST", "AAX"],
+        "website": "https://valhalladsp.com/shop/reverb/valhalla-supermassive/",
+        "open_source": false
+      },
+      {
+        "name": "Valhalla FreqEcho",
+        "description": "Frequency shifter + analog echo emulation",
+        "url": "https://valhallaproduction.s3.us-west-2.amazonaws.com/freqecho/ValhallaFreqEchoOSX_1_2_8.dmg",
+        "filename": "ValhallaFreqEchoOSX_1_2_8.dmg",
+        "version": "1.2.8",
+        "formats": ["VST3", "AU", "VST", "AAX"],
+        "website": "https://valhalladsp.com/shop/delay/valhalla-freq-echo/",
+        "open_source": false
+      },
+      {
+        "name": "OTT",
+        "description": "THE multiband compressor - industry standard",
+        "url": "https://xferrecords.com/product_downloads/24/freeware",
+        "filename": "Install_Xfer_OTT.dmg",
+        "version": "1.37",
+        "formats": ["VST", "AU", "AAX"],
+        "website": "https://xferrecords.com/freeware",
+        "open_source": false
+      },
+      {
+        "name": "Dragonfly Reverb",
+        "description": "4 reverbs - Hall, Room, Plate, Early Reflections",
+        "url": "https://github.com/michaelwillis/dragonfly-reverb/releases/download/3.2.10/dragonfly-reverb-3.2.10-macos-universal.dmg",
+        "filename": "dragonfly-reverb-3.2.10-macos-universal.dmg",
+        "version": "3.2.10",
+        "formats": ["VST3", "VST", "CLAP", "LV2"],
+        "website": "https://michaelwillis.github.io/dragonfly-reverb/",
+        "open_source": true,
+        "github": "https://github.com/michaelwillis/dragonfly-reverb"
+      },
+      {
+        "name": "BYOD",
+        "description": "Build-Your-Own-Distortion - modular effects chain",
+        "url": "https://github.com/Chowdhury-DSP/BYOD/releases/download/v1.3.0/BYOD-Mac-1.3.0.dmg",
+        "filename": "BYOD-Mac-1.3.0.dmg",
+        "version": "1.3.0",
+        "formats": ["VST3", "AU", "AAX", "CLAP"],
+        "website": "https://chowdsp.com/products.html",
+        "open_source": true,
+        "github": "https://github.com/Chowdhury-DSP/BYOD"
+      },
+      {
+        "name": "TDR Nova",
+        "description": "Dynamic EQ - parallel bands, pro mixing tool",
+        "url": "https://www.tokyodawn.net/labs/Nova/2.2.1/TDR%20Nova.zip",
+        "filename": "TDR-Nova.zip",
+        "version": "2.2.1",
+        "formats": ["VST3", "AU", "VST", "AAX"],
+        "website": "https://www.tokyodawn.net/tdr-nova/",
+        "open_source": false
+      },
+      {
+        "name": "Airwindows Consolidated",
+        "description": "350+ effects in one plugin - saturation, tape, console, everything",
+        "url_template": "https://github.com/baconpaul/airwin2rack/releases/download/DAWPlugin/airwindows-consolidated-macOS-{date}-{hash}.dmg",
+        "url": "https://github.com/baconpaul/airwin2rack/releases/tag/DAWPlugin",
+        "filename": "airwindows-consolidated-macOS.dmg",
+        "version": "rolling",
+        "formats": ["VST3", "AU", "CLAP", "LV2"],
+        "website": "https://www.airwindows.com/consolidated/",
+        "open_source": true,
+        "github": "https://github.com/baconpaul/airwin2rack",
+        "note": "Check GitHub releases for latest download URL"
+      },
+      {
+        "name": "DC1A",
+        "description": "Klanghelm character compressor - simple but powerful",
+        "url": "https://klanghelm.com/free/DC1A3dl.php?id=3",
+        "filename": "DC1A3-macOS.pkg",
+        "version": "3.5.0",
+        "formats": ["VST3", "AU", "VST", "AAX"],
+        "website": "https://klanghelm.com/contents/products/DC1A",
+        "open_source": false
+      },
+      {
+        "name": "TAL-Vocoder",
+        "description": "Classic 80s vocoder sound - 11 bands",
+        "url": "https://tal-software.com/downloads/plugins/TAL-Vocoder-2-installer_macos.zip",
+        "filename": "TAL-Vocoder-installer_macos.zip",
+        "version": "3.0.4",
+        "formats": ["VST3", "AU", "VST", "AAX", "CLAP"],
+        "website": "https://tal-software.com/products/tal-vocoder",
+        "open_source": false
+      }
+    ],
+    "instruments": [
+      {
+        "name": "Sitala",
+        "description": "Drum sampler - 16 pads, drag & drop simplicity",
+        "url": "https://www.decomposer.de/sitala/releases/Sitala-1.0.dmg",
+        "filename": "Sitala-1.0.dmg",
+        "version": "1.0.9",
+        "formats": ["VST", "AU", "AAX", "Standalone"],
+        "website": "https://decomposer.de/sitala/",
+        "open_source": false,
+        "note": "Free version - paid v2.0 available"
+      }
+    ],
+    "bundles": [
+      {
+        "name": "MeldaProduction MFreeFXBundle",
+        "description": "37 free effects - EQ, compressor, reverb, analyzer, more",
+        "url": "https://meldaproduction.b-cdn.net/download/mpluginmanager/MPluginManager_02_16_setupmac.zip",
+        "filename": "MPluginManager_mac.zip",
+        "version": "02.16",
+        "formats": ["VST3", "AU", "VST", "AAX"],
+        "website": "https://www.meldaproduction.com/MFreeFXBundle",
+        "open_source": false,
+        "note": "Requires MPluginManager to install individual plugins"
+      }
+    ]
+  },
+  "manual_download": [
+    {
+      "name": "Vital",
+      "description": "Best free wavetable synth - rivals Serum ($189 value)",
+      "website": "https://vital.audio",
+      "reason": "Requires free account registration"
+    },
+    {
+      "name": "Spitfire LABS",
+      "description": "High-quality sampled instruments - piano, strings, pads",
+      "website": "https://labs.spitfireaudio.com",
+      "reason": "Requires Spitfire Audio app and account"
+    },
+    {
+      "name": "Analog Obsession",
+      "description": "50+ analog emulations - compressors, EQs, preamps",
+      "website": "https://analogobsession.com",
+      "reason": "Downloads via Patreon (free tier available)"
+    },
+    {
+      "name": "Kilohearts Essentials",
+      "description": "30+ snapin effects",
+      "website": "https://kilohearts.com/products/kilohearts_essentials",
+      "reason": "Requires Kilohearts installer and account"
+    },
+    {
+      "name": "Native Instruments Komplete Start",
+      "description": "Free bundle with synths, samples, and effects",
+      "website": "https://www.native-instruments.com/en/products/komplete/bundles/komplete-start/",
+      "reason": "Requires Native Access and account"
+    },
+    {
+      "name": "AmpliTube 5 CS",
+      "description": "Free guitar amp sim with 42 gear models",
+      "website": "https://www.ikmultimedia.com/products/amplitube5cs/",
+      "reason": "Requires IK Product Manager and account"
+    }
+  ]
+}
