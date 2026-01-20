@@ -1,5 +1,8 @@
 # Free VST Plugins
 
+[![CI](https://github.com/gr8monk3ys/free-vst-plugins/actions/workflows/ci.yml/badge.svg)](https://github.com/gr8monk3ys/free-vst-plugins/actions/workflows/ci.yml)
+[![Docker](https://github.com/gr8monk3ys/free-vst-plugins/actions/workflows/docker-publish.yml/badge.svg)](https://github.com/gr8monk3ys/free-vst-plugins/pkgs/container/free-vst-plugins)
+
 A curated collection of **high-quality, legally free** VST plugins for music production. Works on **macOS**, **Windows**, and **Linux**.
 
 ## Quick Start
@@ -29,6 +32,30 @@ python3 scripts/download-plugins.py --effects
 
 ```powershell
 .\scripts\download-plugins.ps1
+```
+
+### Docker
+
+```bash
+# Download all plugins to current directory
+docker run -v $(pwd)/downloads:/downloads ghcr.io/gr8monk3ys/free-vst-plugins --all
+
+# Download synths only
+docker run -v $(pwd)/downloads:/downloads ghcr.io/gr8monk3ys/free-vst-plugins --synths
+
+# List available plugins
+docker run ghcr.io/gr8monk3ys/free-vst-plugins --list
+```
+
+Or with docker-compose:
+
+```bash
+# Download all plugins
+docker-compose run download-all
+
+# Download specific category
+docker-compose run download-synths
+docker-compose run download-effects
 ```
 
 ## What's Included
@@ -162,12 +189,50 @@ sudo dpkg -i plugin-name.deb
 ```
 free-vst-plugins/
 ├── README.md
-├── plugins.json          # Plugin database with URLs for all platforms
-├── scripts/
-│   ├── download-plugins.py   # Cross-platform Python script (recommended)
-│   ├── download-plugins.sh   # macOS/Linux Bash script
-│   └── download-plugins.ps1  # Windows PowerShell script
-└── docs/
+├── plugins.json              # Plugin database with URLs for all platforms
+├── Dockerfile                # Docker image for containerized downloads
+├── docker-compose.yml        # Docker Compose for easy usage
+├── .github/
+│   └── workflows/
+│       ├── ci.yml            # CI/CD pipeline (lint, test, URL check)
+│       └── docker-publish.yml # Docker image publishing to GHCR
+└── scripts/
+    ├── download-plugins.py   # Cross-platform Python script (recommended)
+    ├── download-plugins.sh   # macOS/Linux Bash script
+    └── download-plugins.ps1  # Windows PowerShell script
+```
+
+## CI/CD
+
+This project uses GitHub Actions for continuous integration:
+
+| Workflow | Description |
+|----------|-------------|
+| **CI** | Lints code, validates JSON, tests script on all platforms |
+| **Docker Publish** | Builds and pushes Docker image to GHCR |
+| **URL Check** | Weekly validation of plugin download URLs |
+
+### Running Tests Locally
+
+```bash
+# Validate JSON
+python -m json.tool plugins.json > /dev/null
+
+# Lint Python script
+pip install ruff && ruff check scripts/download-plugins.py
+
+# Test script
+python scripts/download-plugins.py --list
+```
+
+### Building Docker Locally
+
+```bash
+# Build image
+docker build -t free-vst-plugins .
+
+# Run container
+docker run -v $(pwd)/downloads:/downloads free-vst-plugins --all
 ```
 
 ## Related Projects
