@@ -1,93 +1,112 @@
-# Free VST Plugins for macOS
+# Free VST Plugins
 
-A curated collection of **high-quality, legally free** VST/AU plugins for music production on macOS. Includes an automated download script.
+A curated collection of **high-quality, legally free** VST plugins for music production. Works on **macOS**, **Windows**, and **Linux**.
 
 ## Quick Start
 
+### Python (Recommended - All Platforms)
+
 ```bash
 # Clone the repo
-git clone https://github.com/gr8monk3ys/free-vst-plugins-mac.git
-cd free-vst-plugins-mac
+git clone https://github.com/gr8monk3ys/free-vst-plugins.git
+cd free-vst-plugins
 
 # Download all plugins (~1.5GB)
-./scripts/download-plugins.sh
+python3 scripts/download-plugins.py
 
 # Or download specific categories
-./scripts/download-plugins.sh --synths
-./scripts/download-plugins.sh --effects
+python3 scripts/download-plugins.py --synths
+python3 scripts/download-plugins.py --effects
+```
+
+### macOS (Bash)
+
+```bash
+./scripts/download-plugins.sh
+```
+
+### Windows (PowerShell)
+
+```powershell
+.\scripts\download-plugins.ps1
 ```
 
 ## What's Included
 
 ### Synths (7 plugins)
 
-| Plugin | Description | Open Source |
-|--------|-------------|:-----------:|
-| **[Surge XT](https://surge-synthesizer.github.io/)** | Hybrid synth - wavetable, FM, subtractive. 2800+ presets | ✅ |
-| **[Dexed](https://asb2m10.github.io/dexed/)** | Yamaha DX7 FM synth clone | ✅ |
-| **[OB-Xd](https://www.discodsp.com/obxd/)** | Oberheim OB-X emulation | ✅ |
-| **[Helm](https://tytel.org/helm/)** | Polyphonic synth with deep modulation | ✅ |
-| **[TAL-NoiseMaker](https://tal-software.com/products/tal-noisemaker)** | Classic VA synth, 256 presets | |
-| **[Tyrell N6](https://u-he.com/products/tyrelln6/)** | u-he analog synth, Apple Silicon native | |
-| **[Zebralette](https://u-he.com/products/zebralette/)** | u-he wavetable oscillator | |
+| Plugin | Description | macOS | Windows | Linux | Open Source |
+|--------|-------------|:-----:|:-------:|:-----:|:-----------:|
+| **[Surge XT](https://surge-synthesizer.github.io/)** | Hybrid synth - wavetable, FM, subtractive. 2800+ presets | ✅ | ✅ | ✅ | ✅ |
+| **[Dexed](https://asb2m10.github.io/dexed/)** | Yamaha DX7 FM synth clone | ✅ | ✅ | ✅ | ✅ |
+| **[OB-Xd](https://www.discodsp.com/obxd/)** | Oberheim OB-X emulation | ✅ | ✅ | ✅ | ✅ |
+| **[Helm](https://tytel.org/helm/)** | Polyphonic synth with deep modulation | ✅ | ✅ | ✅ | ✅ |
+| **[TAL-NoiseMaker](https://tal-software.com/products/tal-noisemaker)** | Classic VA synth, 256 presets | ✅ | ✅ | ✅ | |
+| **[Tyrell N6](https://u-he.com/products/tyrelln6/)** | u-he analog synth | ✅ | ✅ | ✅ | |
+| **[Zebralette](https://u-he.com/products/zebralette/)** | u-he wavetable oscillator | ✅ | ✅ | ✅ | |
 
 ### Effects (10+ plugins)
 
-| Plugin | Type | Open Source |
-|--------|------|:-----------:|
-| **[Valhalla Supermassive](https://valhalladsp.com/shop/reverb/valhalla-supermassive/)** | Reverb/Delay (21 modes) | |
-| **[Valhalla FreqEcho](https://valhalladsp.com/shop/delay/valhalla-freq-echo/)** | Frequency Shifter + Echo | |
-| **[OTT](https://xferrecords.com/freeware)** | Multiband Compressor | |
-| **[Dragonfly Reverb](https://michaelwillis.github.io/dragonfly-reverb/)** | 4 Reverbs (Hall, Room, Plate, ER) | ✅ |
-| **[BYOD](https://chowdsp.com/products.html)** | Modular Distortion | ✅ |
-| **[TDR Nova](https://www.tokyodawn.net/tdr-nova/)** | Dynamic EQ | |
-| **[Airwindows Consolidated](https://www.airwindows.com/consolidated/)** | **350+ effects** in one plugin | ✅ |
-| **[DC1A](https://klanghelm.com/contents/products/DC1A)** | Character Compressor | |
-| **[TAL-Vocoder](https://tal-software.com/products/tal-vocoder)** | Classic 80s Vocoder | |
+| Plugin | Type | macOS | Windows | Linux | Open Source |
+|--------|------|:-----:|:-------:|:-----:|:-----------:|
+| **[Valhalla Supermassive](https://valhalladsp.com/shop/reverb/valhalla-supermassive/)** | Reverb/Delay | ✅ | ✅ | | |
+| **[Valhalla FreqEcho](https://valhalladsp.com/shop/delay/valhalla-freq-echo/)** | Freq Shifter + Echo | ✅ | ✅ | | |
+| **[OTT](https://xferrecords.com/freeware)** | Multiband Compressor | ✅ | ✅ | | |
+| **[Dragonfly Reverb](https://michaelwillis.github.io/dragonfly-reverb/)** | 4 Reverbs | ✅ | ✅ | ✅ | ✅ |
+| **[BYOD](https://chowdsp.com/products.html)** | Modular Distortion | ✅ | ✅ | ✅ | ✅ |
+| **[TDR Nova](https://www.tokyodawn.net/tdr-nova/)** | Dynamic EQ | ✅ | ✅ | | |
+| **[Airwindows Consolidated](https://www.airwindows.com/consolidated/)** | **350+ effects** | ✅ | ✅ | ✅ | ✅ |
+| **[DC1A](https://klanghelm.com/contents/products/DC1A)** | Character Compressor | ✅ | ✅ | | |
+| **[TAL-Vocoder](https://tal-software.com/products/tal-vocoder)** | Classic 80s Vocoder | ✅ | ✅ | ✅ | |
 
 ### Instruments & Bundles
 
-| Plugin | Description |
-|--------|-------------|
-| **[Sitala](https://decomposer.de/sitala/)** | Drum sampler - 16 pads |
-| **[MeldaProduction MFreeFXBundle](https://www.meldaproduction.com/MFreeFXBundle)** | 37 free effects |
+| Plugin | Description | macOS | Windows | Linux |
+|--------|-------------|:-----:|:-------:|:-----:|
+| **[Sitala](https://decomposer.de/sitala/)** | Drum sampler - 16 pads | ✅ | ✅ | ✅ |
+| **[MeldaProduction MFreeFXBundle](https://www.meldaproduction.com/MFreeFXBundle)** | 37 free effects | ✅ | ✅ | ✅ |
 
 ## Manual Download Required
 
 These require account registration but are worth it:
 
-| Plugin | Link | Why It's Great |
-|--------|------|----------------|
-| **Vital** | [vital.audio](https://vital.audio) | Best free wavetable synth (rivals $189 Serum) |
-| **Spitfire LABS** | [labs.spitfireaudio.com](https://labs.spitfireaudio.com) | Pro-quality sampled instruments |
-| **Analog Obsession** | [analogobsession.com](https://analogobsession.com) | 50+ analog hardware emulations |
-| **Kilohearts Essentials** | [kilohearts.com](https://kilohearts.com/products/kilohearts_essentials) | 30+ modular effects |
-| **Komplete Start** | [native-instruments.com](https://www.native-instruments.com/en/products/komplete/bundles/komplete-start/) | NI's free starter bundle |
+| Plugin | Platforms | Why It's Great |
+|--------|-----------|----------------|
+| **[Vital](https://vital.audio)** | All | Best free wavetable synth (rivals $189 Serum) |
+| **[Spitfire LABS](https://labs.spitfireaudio.com)** | macOS/Win | Pro-quality sampled instruments |
+| **[Analog Obsession](https://analogobsession.com)** | macOS/Win | 50+ analog hardware emulations |
+| **[Kilohearts Essentials](https://kilohearts.com/products/kilohearts_essentials)** | macOS/Win | 30+ modular effects |
+| **[Komplete Start](https://www.native-instruments.com/en/products/komplete/bundles/komplete-start/)** | macOS/Win | NI's free starter bundle |
+| **[LSP Plugins](https://lsp-plug.in/)** | Linux/Win | 70+ professional Linux-native plugins |
 
 ## Usage
 
 ```bash
 # Show help
-./scripts/download-plugins.sh --help
+python3 scripts/download-plugins.py --help
 
 # List all available plugins
-./scripts/download-plugins.sh --list
+python3 scripts/download-plugins.py --list
 
 # Download everything
-./scripts/download-plugins.sh --all
+python3 scripts/download-plugins.py --all
 
 # Download specific categories
-./scripts/download-plugins.sh --synths
-./scripts/download-plugins.sh --effects
-./scripts/download-plugins.sh --instruments
+python3 scripts/download-plugins.py --synths
+python3 scripts/download-plugins.py --effects
+python3 scripts/download-plugins.py --instruments
+python3 scripts/download-plugins.py --bundles
 
 # Custom download directory
-./scripts/download-plugins.sh --dir ~/Music/Plugins
+python3 scripts/download-plugins.py --dir ~/Music/Plugins
+
+# Force a specific platform (useful for testing)
+python3 scripts/download-plugins.py --platform windows
 ```
 
 ## Installation
 
-After downloading:
+### macOS
 
 1. Open `~/Downloads/VST-Plugins/`
 2. Double-click each `.dmg` or `.pkg` file
@@ -97,15 +116,58 @@ After downloading:
    - **Ableton**: Preferences → Plug-Ins → Rescan
    - **Logic Pro**: Automatic on restart
 
-## Plugin Locations on macOS
-
+**Plugin Locations:**
 ```
-/Library/Audio/Plug-Ins/VST/          # System VST
 /Library/Audio/Plug-Ins/VST3/         # System VST3
 /Library/Audio/Plug-Ins/Components/   # System AU
-~/Library/Audio/Plug-Ins/VST/         # User VST
 ~/Library/Audio/Plug-Ins/VST3/        # User VST3
-~/Library/Audio/Plug-Ins/Components/  # User AU
+```
+
+### Windows
+
+1. Open `%USERPROFILE%\Downloads\VST-Plugins\`
+2. Run each `.exe` or `.msi` installer as Administrator
+3. Follow installer prompts
+4. Rescan plugins in your DAW
+
+**Plugin Locations:**
+```
+C:\Program Files\Common Files\VST3\           # System VST3
+C:\Program Files\VSTPlugins\                  # System VST
+%APPDATA%\VST3\                               # User VST3
+```
+
+### Linux
+
+1. Extract archives to plugin directories
+2. Rescan plugins in your DAW
+
+**Plugin Locations:**
+```
+~/.vst3/                  # User VST3
+~/.vst/                   # User VST
+~/.lv2/                   # User LV2
+/usr/lib/vst3/            # System VST3
+/usr/lib/lv2/             # System LV2
+```
+
+**Ubuntu/Debian package install:**
+```bash
+# For .deb packages
+sudo dpkg -i plugin-name.deb
+```
+
+## File Structure
+
+```
+free-vst-plugins/
+├── README.md
+├── plugins.json          # Plugin database with URLs for all platforms
+├── scripts/
+│   ├── download-plugins.py   # Cross-platform Python script (recommended)
+│   ├── download-plugins.sh   # macOS/Linux Bash script
+│   └── download-plugins.ps1  # Windows PowerShell script
+└── docs/
 ```
 
 ## Related Projects
@@ -113,26 +175,24 @@ After downloading:
 - **[OpenAudio](https://github.com/webprofusion/OpenAudio)** - Comprehensive list of open-source audio software
 - **[awesome-vst](https://github.com/dreikanter/awesome-vst)** - Curated VST plugins reference
 - **[FreeAudioPluginList](https://github.com/twinysam/FreeAudioPluginList)** - Ultimate list of free audio plugins
-- **[free-music-plugins](https://github.com/spnw/free-music-plugins)** - Free audio and MIDI plugins
 - **[OwlPlug](https://github.com/DropSnorz/OwlPlug)** - Cross-platform plugin manager
-- **[homebrew-audio](https://github.com/joshka/homebrew-audio)** - Homebrew casks for audio plugins
 
 ## Contributing
 
 Found a great free plugin? PRs welcome!
 
 1. Fork the repo
-2. Add plugin to `plugins.json`
-3. Update the download script
+2. Add plugin to `plugins.json` with URLs for all available platforms
+3. Test the download script
 4. Submit PR
 
 ### Plugin Criteria
 
 - ✅ Legally free (not cracked/pirated)
-- ✅ macOS compatible (Intel or Apple Silicon)
 - ✅ 64-bit
-- ✅ VST3 or AU format
+- ✅ VST3, AU, CLAP, or LV2 format
 - ✅ High quality / useful for production
+- ✅ Bonus: Available on multiple platforms
 
 ## License
 

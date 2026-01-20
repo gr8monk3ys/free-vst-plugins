@@ -1,21 +1,34 @@
 {
   "meta": {
-    "name": "Free VST Plugins for Mac",
-    "version": "1.0.0",
-    "description": "Curated collection of high-quality free VST/AU plugins for macOS",
-    "updated": "2026-01-18",
+    "name": "Free VST Plugins",
+    "version": "2.0.0",
+    "description": "Curated collection of high-quality free VST plugins for macOS, Windows, and Linux",
+    "updated": "2026-01-19",
     "author": "gr8monk3ys",
-    "license": "MIT"
+    "license": "MIT",
+    "platforms": ["macos", "windows", "linux"]
   },
   "plugins": {
     "synths": [
       {
         "name": "Surge XT",
         "description": "Open-source hybrid synth - wavetable, FM, subtractive. 2800+ presets",
-        "url": "https://github.com/surge-synthesizer/releases-xt/releases/download/1.3.4/surge-xt-macOS-1.3.4.dmg",
-        "filename": "surge-xt-macOS-1.3.4.dmg",
+        "urls": {
+          "macos": {
+            "url": "https://github.com/surge-synthesizer/releases-xt/releases/download/1.3.4/surge-xt-macOS-1.3.4.dmg",
+            "filename": "surge-xt-macOS-1.3.4.dmg"
+          },
+          "windows": {
+            "url": "https://github.com/surge-synthesizer/releases-xt/releases/download/1.3.4/surge-xt-win64-1.3.4-setup.exe",
+            "filename": "surge-xt-win64-1.3.4-setup.exe"
+          },
+          "linux": {
+            "url": "https://github.com/surge-synthesizer/releases-xt/releases/download/1.3.4/surge-xt-linux-x64-1.3.4.deb",
+            "filename": "surge-xt-linux-1.3.4.deb"
+          }
+        },
         "version": "1.3.4",
-        "formats": ["VST3", "AU", "CLAP"],
+        "formats": ["VST3", "AU", "CLAP", "LV2"],
         "website": "https://surge-synthesizer.github.io/",
         "open_source": true,
         "github": "https://github.com/surge-synthesizer/surge"
@@ -23,10 +36,22 @@
       {
         "name": "Dexed",
         "description": "Yamaha DX7 FM synth clone - loads thousands of classic patches",
-        "url": "https://github.com/asb2m10/dexed/releases/download/v1.0.1/Dexed-1.0.1-macOS.dmg",
-        "filename": "Dexed-1.0.1-macOS.dmg",
+        "urls": {
+          "macos": {
+            "url": "https://github.com/asb2m10/dexed/releases/download/v1.0.1/Dexed-1.0.1-macOS.dmg",
+            "filename": "Dexed-1.0.1-macOS.dmg"
+          },
+          "windows": {
+            "url": "https://github.com/asb2m10/dexed/releases/download/v1.0.1/Dexed-1.0.1-windows.exe",
+            "filename": "Dexed-1.0.1-windows.exe"
+          },
+          "linux": {
+            "url": "https://github.com/asb2m10/dexed/releases/download/v1.0.1/Dexed-1.0.1-linux.tar.gz",
+            "filename": "Dexed-1.0.1-linux.tar.gz"
+          }
+        },
         "version": "1.0.1",
-        "formats": ["VST3", "AU"],
+        "formats": ["VST3", "AU", "LV2", "Standalone"],
         "website": "https://asb2m10.github.io/dexed/",
         "open_source": true,
         "github": "https://github.com/asb2m10/dexed"
@@ -34,10 +59,22 @@
       {
         "name": "OB-Xd",
         "description": "Oberheim OB-X emulation - fat analog polysynth",
-        "url": "https://github.com/reales/OB-Xd/releases/download/v2.19/OB-Xd.2.19.pkg",
-        "filename": "OB-Xd.2.19.pkg",
+        "urls": {
+          "macos": {
+            "url": "https://github.com/reales/OB-Xd/releases/download/v2.19/OB-Xd.2.19.pkg",
+            "filename": "OB-Xd.2.19.pkg"
+          },
+          "windows": {
+            "url": "https://github.com/reales/OB-Xd/releases/download/v2.19/OB-Xd.2.19_Win.exe",
+            "filename": "OB-Xd.2.19_Win.exe"
+          },
+          "linux": {
+            "url": "https://github.com/reales/OB-Xd/releases/download/v2.19/OB-Xd.2.19_Linux_x86_64.tar.gz",
+            "filename": "OB-Xd.2.19_Linux.tar.gz"
+          }
+        },
         "version": "2.19",
-        "formats": ["VST3", "AU", "VST"],
+        "formats": ["VST3", "AU", "VST", "LV2"],
         "website": "https://www.discodsp.com/obxd/",
         "open_source": true,
         "github": "https://github.com/reales/OB-Xd"
@@ -45,10 +82,22 @@
       {
         "name": "Helm",
         "description": "Polyphonic synth with deep modulation routing",
-        "url": "https://tytel.org/static/dist/Helm_v0_9_0_r.pkg",
-        "filename": "Helm_v0_9_0_r.pkg",
+        "urls": {
+          "macos": {
+            "url": "https://tytel.org/static/dist/Helm_v0_9_0_r.pkg",
+            "filename": "Helm_v0_9_0_r.pkg"
+          },
+          "windows": {
+            "url": "https://tytel.org/static/dist/Helm_v0_9_0_r.exe",
+            "filename": "Helm_v0_9_0_r.exe"
+          },
+          "linux": {
+            "url": "https://tytel.org/static/dist/helm_0_9_0_r.tar.gz",
+            "filename": "helm_0_9_0_r.tar.gz"
+          }
+        },
         "version": "0.9.0",
-        "formats": ["VST3", "AU", "VST"],
+        "formats": ["VST3", "AU", "VST", "LV2", "Standalone"],
         "website": "https://tytel.org/helm/",
         "open_source": true,
         "github": "https://github.com/mtytel/helm"
@@ -56,8 +105,20 @@
       {
         "name": "TAL-NoiseMaker",
         "description": "Classic VA synth - 256 presets, low CPU usage",
-        "url": "https://tal-software.com/downloads/plugins/TAL-NoiseMaker-installer_macos.zip",
-        "filename": "TAL-NoiseMaker-installer_macos.zip",
+        "urls": {
+          "macos": {
+            "url": "https://tal-software.com/downloads/plugins/TAL-NoiseMaker-installer_macos.zip",
+            "filename": "TAL-NoiseMaker-installer_macos.zip"
+          },
+          "windows": {
+            "url": "https://tal-software.com/downloads/plugins/TAL-NoiseMaker-installer.zip",
+            "filename": "TAL-NoiseMaker-installer_win.zip"
+          },
+          "linux": {
+            "url": "https://tal-software.com/downloads/plugins/TAL-NoiseMaker-installer_linux.zip",
+            "filename": "TAL-NoiseMaker-installer_linux.zip"
+          }
+        },
         "version": "5.0.6",
         "formats": ["VST3", "AU", "VST", "AAX", "CLAP"],
         "website": "https://tal-software.com/products/tal-noisemaker",
@@ -65,21 +126,45 @@
       },
       {
         "name": "Tyrell N6",
-        "description": "u-he analog synth - 580+ presets, Apple Silicon native",
-        "url": "https://dl.u-he.com/releases/TyrellN6_300_public_beta_16976_Mac.zip",
-        "filename": "TyrellN6_Mac.zip",
+        "description": "u-he analog synth - 580+ presets, native binaries",
+        "urls": {
+          "macos": {
+            "url": "https://dl.u-he.com/releases/TyrellN6_300_public_beta_16976_Mac.zip",
+            "filename": "TyrellN6_Mac.zip"
+          },
+          "windows": {
+            "url": "https://dl.u-he.com/releases/TyrellN6_300_public_beta_16976_Win.zip",
+            "filename": "TyrellN6_Win.zip"
+          },
+          "linux": {
+            "url": "https://dl.u-he.com/releases/TyrellN6_300_public_beta_16976_Linux.tar.xz",
+            "filename": "TyrellN6_Linux.tar.xz"
+          }
+        },
         "version": "3.0.0",
-        "formats": ["VST3", "AU", "VST", "CLAP", "AAX"],
+        "formats": ["VST3", "AU", "VST", "CLAP", "AAX", "LV2"],
         "website": "https://u-he.com/products/tyrelln6/",
         "open_source": false
       },
       {
         "name": "Zebralette",
         "description": "u-he wavetable oscillator - deep sound design capabilities",
-        "url": "https://dl.u-he.com/releases/Zebra_Legacy_294_16765_Mac.zip",
-        "filename": "Zebralette_Mac.zip",
+        "urls": {
+          "macos": {
+            "url": "https://dl.u-he.com/releases/Zebra_Legacy_294_16765_Mac.zip",
+            "filename": "Zebralette_Mac.zip"
+          },
+          "windows": {
+            "url": "https://dl.u-he.com/releases/Zebra_Legacy_294_16765_Win.zip",
+            "filename": "Zebralette_Win.zip"
+          },
+          "linux": {
+            "url": "https://dl.u-he.com/releases/Zebra_Legacy_294_16765_Linux.tar.xz",
+            "filename": "Zebralette_Linux.tar.xz"
+          }
+        },
         "version": "2.9.4",
-        "formats": ["VST3", "AU", "VST"],
+        "formats": ["VST3", "AU", "VST", "LV2"],
         "website": "https://u-he.com/products/zebralette/",
         "open_source": false
       }
@@ -88,38 +173,77 @@
       {
         "name": "Valhalla Supermassive",
         "description": "Lush reverbs & delays - 21 modes, studio quality",
-        "url": "https://valhallaproduction.s3.us-west-2.amazonaws.com/supermassive/ValhallaSupermassiveOSX_5_0_0.dmg",
-        "filename": "ValhallaSupermassiveOSX_5_0_0.dmg",
+        "urls": {
+          "macos": {
+            "url": "https://valhallaproduction.s3.us-west-2.amazonaws.com/supermassive/ValhallaSupermassiveOSX_5_0_0.dmg",
+            "filename": "ValhallaSupermassiveOSX_5_0_0.dmg"
+          },
+          "windows": {
+            "url": "https://valhallaproduction.s3.us-west-2.amazonaws.com/supermassive/ValhallaSupermassiveWin_5_0_0.exe",
+            "filename": "ValhallaSupermassiveWin_5_0_0.exe"
+          }
+        },
         "version": "5.0.0",
         "formats": ["VST3", "AU", "VST", "AAX"],
         "website": "https://valhalladsp.com/shop/reverb/valhalla-supermassive/",
-        "open_source": false
+        "open_source": false,
+        "note": "macOS and Windows only"
       },
       {
         "name": "Valhalla FreqEcho",
         "description": "Frequency shifter + analog echo emulation",
-        "url": "https://valhallaproduction.s3.us-west-2.amazonaws.com/freqecho/ValhallaFreqEchoOSX_1_2_8.dmg",
-        "filename": "ValhallaFreqEchoOSX_1_2_8.dmg",
+        "urls": {
+          "macos": {
+            "url": "https://valhallaproduction.s3.us-west-2.amazonaws.com/freqecho/ValhallaFreqEchoOSX_1_2_8.dmg",
+            "filename": "ValhallaFreqEchoOSX_1_2_8.dmg"
+          },
+          "windows": {
+            "url": "https://valhallaproduction.s3.us-west-2.amazonaws.com/freqecho/ValhallaFreqEchoWin_1_2_8.exe",
+            "filename": "ValhallaFreqEchoWin_1_2_8.exe"
+          }
+        },
         "version": "1.2.8",
         "formats": ["VST3", "AU", "VST", "AAX"],
         "website": "https://valhalladsp.com/shop/delay/valhalla-freq-echo/",
-        "open_source": false
+        "open_source": false,
+        "note": "macOS and Windows only"
       },
       {
         "name": "OTT",
         "description": "THE multiband compressor - industry standard",
-        "url": "https://xferrecords.com/product_downloads/24/freeware",
-        "filename": "Install_Xfer_OTT.dmg",
+        "urls": {
+          "macos": {
+            "url": "https://xferrecords.com/product_downloads/24/freeware",
+            "filename": "Install_Xfer_OTT.dmg"
+          },
+          "windows": {
+            "url": "https://xferrecords.com/product_downloads/23/freeware",
+            "filename": "Install_Xfer_OTT.exe"
+          }
+        },
         "version": "1.37",
         "formats": ["VST", "AU", "AAX"],
         "website": "https://xferrecords.com/freeware",
-        "open_source": false
+        "open_source": false,
+        "note": "macOS and Windows only"
       },
       {
         "name": "Dragonfly Reverb",
         "description": "4 reverbs - Hall, Room, Plate, Early Reflections",
-        "url": "https://github.com/michaelwillis/dragonfly-reverb/releases/download/3.2.10/dragonfly-reverb-3.2.10-macos-universal.dmg",
-        "filename": "dragonfly-reverb-3.2.10-macos-universal.dmg",
+        "urls": {
+          "macos": {
+            "url": "https://github.com/michaelwillis/dragonfly-reverb/releases/download/3.2.10/dragonfly-reverb-3.2.10-macos-universal.dmg",
+            "filename": "dragonfly-reverb-3.2.10-macos.dmg"
+          },
+          "windows": {
+            "url": "https://github.com/michaelwillis/dragonfly-reverb/releases/download/3.2.10/dragonfly-reverb-3.2.10-win64.zip",
+            "filename": "dragonfly-reverb-3.2.10-win64.zip"
+          },
+          "linux": {
+            "url": "https://github.com/michaelwillis/dragonfly-reverb/releases/download/3.2.10/dragonfly-reverb-3.2.10-linux-x86_64.tar.gz",
+            "filename": "dragonfly-reverb-3.2.10-linux.tar.gz"
+          }
+        },
         "version": "3.2.10",
         "formats": ["VST3", "VST", "CLAP", "LV2"],
         "website": "https://michaelwillis.github.io/dragonfly-reverb/",
@@ -129,10 +253,22 @@
       {
         "name": "BYOD",
         "description": "Build-Your-Own-Distortion - modular effects chain",
-        "url": "https://github.com/Chowdhury-DSP/BYOD/releases/download/v1.3.0/BYOD-Mac-1.3.0.dmg",
-        "filename": "BYOD-Mac-1.3.0.dmg",
+        "urls": {
+          "macos": {
+            "url": "https://github.com/Chowdhury-DSP/BYOD/releases/download/v1.3.0/BYOD-Mac-1.3.0.dmg",
+            "filename": "BYOD-Mac-1.3.0.dmg"
+          },
+          "windows": {
+            "url": "https://github.com/Chowdhury-DSP/BYOD/releases/download/v1.3.0/BYOD-Win-1.3.0.exe",
+            "filename": "BYOD-Win-1.3.0.exe"
+          },
+          "linux": {
+            "url": "https://github.com/Chowdhury-DSP/BYOD/releases/download/v1.3.0/BYOD-Linux-1.3.0.deb",
+            "filename": "BYOD-Linux-1.3.0.deb"
+          }
+        },
         "version": "1.3.0",
-        "formats": ["VST3", "AU", "AAX", "CLAP"],
+        "formats": ["VST3", "AU", "AAX", "CLAP", "LV2"],
         "website": "https://chowdsp.com/products.html",
         "open_source": true,
         "github": "https://github.com/Chowdhury-DSP/BYOD"
@@ -140,41 +276,73 @@
       {
         "name": "TDR Nova",
         "description": "Dynamic EQ - parallel bands, pro mixing tool",
-        "url": "https://www.tokyodawn.net/labs/Nova/2.2.1/TDR%20Nova.zip",
-        "filename": "TDR-Nova.zip",
+        "urls": {
+          "macos": {
+            "url": "https://www.tokyodawn.net/labs/Nova/2.2.1/TDR%20Nova%20(macOS).pkg",
+            "filename": "TDR-Nova-macOS.pkg"
+          },
+          "windows": {
+            "url": "https://www.tokyodawn.net/labs/Nova/2.2.1/TDR%20Nova%20(Windows).zip",
+            "filename": "TDR-Nova-Windows.zip"
+          }
+        },
         "version": "2.2.1",
         "formats": ["VST3", "AU", "VST", "AAX"],
         "website": "https://www.tokyodawn.net/tdr-nova/",
-        "open_source": false
+        "open_source": false,
+        "note": "macOS and Windows only"
       },
       {
         "name": "Airwindows Consolidated",
         "description": "350+ effects in one plugin - saturation, tape, console, everything",
-        "url_template": "https://github.com/baconpaul/airwin2rack/releases/download/DAWPlugin/airwindows-consolidated-macOS-{date}-{hash}.dmg",
-        "url": "https://github.com/baconpaul/airwin2rack/releases/tag/DAWPlugin",
-        "filename": "airwindows-consolidated-macOS.dmg",
+        "urls": {
+          "macos": { "url": "github-api", "filename": "airwindows-consolidated-macos.dmg" },
+          "windows": { "url": "github-api", "filename": "airwindows-consolidated-windows.zip" },
+          "linux": { "url": "github-api", "filename": "airwindows-consolidated-linux.tar.gz" }
+        },
         "version": "rolling",
         "formats": ["VST3", "AU", "CLAP", "LV2"],
         "website": "https://www.airwindows.com/consolidated/",
         "open_source": true,
         "github": "https://github.com/baconpaul/airwin2rack",
-        "note": "Check GitHub releases for latest download URL"
+        "note": "Script fetches latest from GitHub API"
       },
       {
         "name": "DC1A",
         "description": "Klanghelm character compressor - simple but powerful",
-        "url": "https://klanghelm.com/free/DC1A3dl.php?id=3",
-        "filename": "DC1A3-macOS.pkg",
+        "urls": {
+          "macos": {
+            "url": "https://klanghelm.com/downloads/DC1A/DC1A3-macOS.pkg",
+            "filename": "DC1A3-macOS.pkg"
+          },
+          "windows": {
+            "url": "https://klanghelm.com/downloads/DC1A/DC1A3-windows.exe",
+            "filename": "DC1A3-windows.exe"
+          }
+        },
         "version": "3.5.0",
         "formats": ["VST3", "AU", "VST", "AAX"],
         "website": "https://klanghelm.com/contents/products/DC1A",
-        "open_source": false
+        "open_source": false,
+        "note": "macOS and Windows only"
       },
       {
         "name": "TAL-Vocoder",
         "description": "Classic 80s vocoder sound - 11 bands",
-        "url": "https://tal-software.com/downloads/plugins/TAL-Vocoder-2-installer_macos.zip",
-        "filename": "TAL-Vocoder-installer_macos.zip",
+        "urls": {
+          "macos": {
+            "url": "https://tal-software.com/downloads/plugins/TAL-Vocoder-2-installer_macos.zip",
+            "filename": "TAL-Vocoder-installer_macos.zip"
+          },
+          "windows": {
+            "url": "https://tal-software.com/downloads/plugins/TAL-Vocoder-2-installer.zip",
+            "filename": "TAL-Vocoder-installer_win.zip"
+          },
+          "linux": {
+            "url": "https://tal-software.com/downloads/plugins/TAL-Vocoder-2-installer_linux.zip",
+            "filename": "TAL-Vocoder-installer_linux.zip"
+          }
+        },
         "version": "3.0.4",
         "formats": ["VST3", "AU", "VST", "AAX", "CLAP"],
         "website": "https://tal-software.com/products/tal-vocoder",
@@ -185,8 +353,20 @@
       {
         "name": "Sitala",
         "description": "Drum sampler - 16 pads, drag & drop simplicity",
-        "url": "https://www.decomposer.de/sitala/releases/Sitala-1.0.dmg",
-        "filename": "Sitala-1.0.dmg",
+        "urls": {
+          "macos": {
+            "url": "https://www.decomposer.de/sitala/releases/Sitala-1.0.dmg",
+            "filename": "Sitala-1.0.dmg"
+          },
+          "windows": {
+            "url": "https://www.decomposer.de/sitala/releases/Sitala-1.0-Windows.exe",
+            "filename": "Sitala-1.0-Windows.exe"
+          },
+          "linux": {
+            "url": "https://www.decomposer.de/sitala/releases/Sitala-1.0-Linux.tar.gz",
+            "filename": "Sitala-1.0-Linux.tar.gz"
+          }
+        },
         "version": "1.0.9",
         "formats": ["VST", "AU", "AAX", "Standalone"],
         "website": "https://decomposer.de/sitala/",
@@ -198,9 +378,21 @@
       {
         "name": "MeldaProduction MFreeFXBundle",
         "description": "37 free effects - EQ, compressor, reverb, analyzer, more",
-        "url": "https://meldaproduction.b-cdn.net/download/mpluginmanager/MPluginManager_02_16_setupmac.zip",
-        "filename": "MPluginManager_mac.zip",
-        "version": "02.16",
+        "urls": {
+          "macos": {
+            "url": "https://meldaproduction.b-cdn.net/download/mpluginmanager/MPluginManager_mac.zip",
+            "filename": "MPluginManager_mac.zip"
+          },
+          "windows": {
+            "url": "https://meldaproduction.b-cdn.net/download/mpluginmanager/MPluginManager.exe",
+            "filename": "MPluginManager.exe"
+          },
+          "linux": {
+            "url": "https://meldaproduction.b-cdn.net/download/mpluginmanager/MPluginManager_linux.tar.gz",
+            "filename": "MPluginManager_linux.tar.gz"
+          }
+        },
+        "version": "latest",
         "formats": ["VST3", "AU", "VST", "AAX"],
         "website": "https://www.meldaproduction.com/MFreeFXBundle",
         "open_source": false,
@@ -213,37 +405,50 @@
       "name": "Vital",
       "description": "Best free wavetable synth - rivals Serum ($189 value)",
       "website": "https://vital.audio",
+      "platforms": ["macos", "windows", "linux"],
       "reason": "Requires free account registration"
     },
     {
       "name": "Spitfire LABS",
       "description": "High-quality sampled instruments - piano, strings, pads",
       "website": "https://labs.spitfireaudio.com",
+      "platforms": ["macos", "windows"],
       "reason": "Requires Spitfire Audio app and account"
     },
     {
       "name": "Analog Obsession",
       "description": "50+ analog emulations - compressors, EQs, preamps",
       "website": "https://analogobsession.com",
+      "platforms": ["macos", "windows"],
       "reason": "Downloads via Patreon (free tier available)"
     },
     {
       "name": "Kilohearts Essentials",
       "description": "30+ snapin effects",
       "website": "https://kilohearts.com/products/kilohearts_essentials",
+      "platforms": ["macos", "windows"],
       "reason": "Requires Kilohearts installer and account"
     },
     {
       "name": "Native Instruments Komplete Start",
       "description": "Free bundle with synths, samples, and effects",
       "website": "https://www.native-instruments.com/en/products/komplete/bundles/komplete-start/",
+      "platforms": ["macos", "windows"],
       "reason": "Requires Native Access and account"
     },
     {
       "name": "AmpliTube 5 CS",
       "description": "Free guitar amp sim with 42 gear models",
       "website": "https://www.ikmultimedia.com/products/amplitube5cs/",
+      "platforms": ["macos", "windows"],
       "reason": "Requires IK Product Manager and account"
+    },
+    {
+      "name": "LSP Plugins",
+      "description": "70+ professional-grade audio plugins (Linux-native)",
+      "website": "https://lsp-plug.in/",
+      "platforms": ["linux", "windows"],
+      "reason": "Available via package managers on Linux"
     }
   ]
 }
